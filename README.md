@@ -1,6 +1,6 @@
 # mark-it
 
-**mark-it** is a simple tool to match patterns in your files and replace they with the content of another markdown file instead.
+**mark-it** is a simple tool to match patterns in your files and replace them with the content of another markdown file instead.
 
 This tool was created specially for our personal need of editing/adding HTML content on JSON files, where the content of your object can't have multi-line strings.
 
@@ -28,7 +28,7 @@ Example:
 ```
 
 ## How?
-**mark-it** will read all your files, look for any tags on it and then it will replace they by a markdown content specified on your tag. The tag should look like this:
+**mark-it** will read all your files, look for any tags on it and then it will replace them by a markdown content specified on your tag. The tag should look like this:
 
 ```
 {{#md path/to/your/markdown.md }}
