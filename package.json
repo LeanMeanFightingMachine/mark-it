@@ -1,0 +1,31 @@
+{
+	"name"			: "markIt",
+	"version"		: "0.0.1",
+	"author"		: "Lucas Motta <http://lucasmotta.com>",
+	"description"	: "",
+	"keywords"		: [],
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/LeanMeanFightingMachine/markIt"
+	},
+
+	"main": "./lib/main",
+
+	"bin": {
+		"markIt": "./bin/markIt"
+	},
+
+	"engines": {
+		"node": ">= 0.10.x"
+	},
+
+	"dependencies": {
+		"colors"			: "~0.6.x",
+		"marked" 			: "~0.2.x",
+		"commander" 		: "~2.0.x",
+		"glob-expand" 		: "~0.0.x",
+		"html-minifier" 	: "~0.5.x",
+		"fs-extra" 			: "~0.6.x"
+	}
+}

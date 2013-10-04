@@ -1,0 +1,5 @@
+node_modules
+lib
+data
+*.sublime-project
+*.sublime-workspace

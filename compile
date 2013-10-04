@@ -1,0 +1,5 @@
+#!/bin/bash
+#!/bin/sh
+
+
+coffee -o lib/ -cwm src/
