@@ -1,5 +1,5 @@
 {
-	"name"			: "markIt",
+	"name"			: "mark-it",
 	"version"		: "0.0.1",
 	"author"		: "Lucas Motta <http://lucasmotta.com>",
 	"description"	: "",
@@ -7,13 +7,13 @@
 
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/LeanMeanFightingMachine/markIt"
+		"url": "https://github.com/LeanMeanFightingMachine/mark-it"
 	},
 
 	"main": "./lib/main",
 
 	"bin": {
-		"markIt": "./bin/markIt"
+		"mark-it": "./bin/mark-it"
 	},
 
 	"engines": {

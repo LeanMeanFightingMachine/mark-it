@@ -27,7 +27,7 @@ module.exports = class Main
 			.parse(process.argv)
 
 		# Marked options
-		marked.setOptions gfm: true, breaks: true, sanitize:false
+		marked.setOptions gfm: true, breaks: true, sanitize: false
 
 		# Get the parameters
 		@_input = program.input
@@ -47,6 +47,7 @@ module.exports = class Main
 	_parseFile: ->
 		# Get the next file name to load
 		fileName = @_files.shift()
+		fileType = if fileName.lastIndexOf(".") >= 0 then fileName.substring(fileName.lastIndexOf(".") + 1, fileName.length).toLowerCase() + ""
 
 		# Load the file content
 		@_debug "Reading".yellow, "#{@_input + fileName}".yellow.bold + "...".yellow
@@ -71,6 +72,8 @@ module.exports = class Main
 				markdownData = marked(markdownData)
 				# Minify the html by removing the white space
 				markdownData = htmlminifier.minify markdownData, collapseWhitespace: true
+				# Escape double-quotes if it's a json file
+				markdownData = markdownData.replace(/"/g, "\'")
 				# Replace 
 				data = data.substring(0, tags[i].start) + markdownData + data.substring(tags[i].end)
 				succeeded++
