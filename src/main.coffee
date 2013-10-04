@@ -22,8 +22,8 @@ module.exports = class Main
 		# Commander options
 		program
 			.version(pkg.version)
-			.option("-i, --input <path>", "Input folder of your files")
-			.option("-o, --output <path>", "Output file where your files will be saved")
+			.option("-i, --input <path>", "input folder of your files" + " (required)".red)
+			.option("-o, --output <path>", "output folder where your files will be saved" + " (default to --input)".grey)
 			.parse(process.argv)
 
 		# Marked options
