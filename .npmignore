@@ -4,7 +4,7 @@ node_modules
 
 # Project files #
 ######################
-lib
-data
+src
+compile
 *.sublime-project
 *.sublime-workspace

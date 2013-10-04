@@ -2,8 +2,8 @@
 	"name"			: "mark-it",
 	"version"		: "0.0.1",
 	"author"		: "Lucas Motta <http://lucasmotta.com>",
-	"description"	: "",
-	"keywords"		: [],
+	"description"	: "Simple tool to match patterns in your files and replace they with the content of another Markdown file instead.",
+	"keywords"		: ["replace", "markdown", "content", "string", "html"],
 
 	"repository": {
 		"type": "git",

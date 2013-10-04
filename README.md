@@ -11,12 +11,20 @@ But you are not strict to JSON files only, **mark-it** can process any other tex
 [sudo] npm install -g mark-it
 ```
 
-## Options
+## CLI
+Command line interface help screen.
 
 ```
--h, --help           display the help information
--i, --input <path>   input folder of your files (required)
--o, --output <path>  output folder where your files will be saved (default to --input)
+Usage:
+  mark-it [options]
+
+Options:
+  -h, --help           display the help information
+  -i, --input <path>   input folder of your files (required)
+  -o, --output <path>  output folder where your files will be saved (default to --input)
+
+Example:
+  mark-it -i input/ -o output/
 ```
 
 ## How?
