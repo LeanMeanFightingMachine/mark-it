@@ -2,7 +2,7 @@
 
 **mark-it** is a simple tool to match patterns in your files and replace they with the content of another markdown file instead.
 
-This tool was created specially for our personal need of editing/adding html content to JSON files, where the content of your object can't have multi-line strings.
+This tool was created specially for our personal need of editing/adding HTML content on JSON files, where the content of your object can't have multi-line strings.
 
 But you are not strict to JSON files only, **mark-it** can process any other text format file.
 
@@ -47,7 +47,7 @@ mark-it -i input/ -o output/
 
 #### input/post.json
 
-```
+```json
 {
    "title": "Title of my post",
    "image": "/img/image.png",
@@ -57,7 +57,7 @@ mark-it -i input/ -o output/
 
 #### input/md/post-content.md
 
-```
+```markdown
 # Hello world, I am a h1
 ## And I am a h2
 
@@ -72,7 +72,7 @@ You can also add **paragraphs**, **lists**, **tables**, etc… Basically everyth
 
 #### output/post.json
 
-```
+```json
 {
    "title": "Title of my post",
    "image": "/img/image.png",
