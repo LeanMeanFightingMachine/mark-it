@@ -2,7 +2,7 @@
 
 **mark-it** is a simple tool to match patterns in your files and replace them with the content of another markdown file instead.
 
-This tool was created specially for our personal need of editing/adding HTML content on JSON files, where the content of your object can't have multi-line strings.
+This tool was created specially for our personal need of editing/adding HTML content into JSON files – where multi-line strings are not possible.
 
 But you are not strict to JSON files only, **mark-it** can process any other text format file.
 
